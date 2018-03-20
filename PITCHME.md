@@ -1,6 +1,6 @@
-## Rio Kierkels
+## @fa[terminal]
 
-@fa[terminal]
+# Rio Kierkels
 
 ---
 
@@ -15,3 +15,9 @@
 ---
 
 ## OpenTracing
+
+```go
+func main() {
+    fmt.Println("hello world!")
+}
+```
