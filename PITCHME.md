@@ -17,9 +17,11 @@
 ## OpenTracing
 
 ```go
-func startWork(ctx context.Context, words []string) {
+func Work(ctx context.Context, words []string) {
     span, ctx := opentracing.StartSpanFromContext(ctx, "work")
     defer span.Finish()
+
+    span.SetTag("words", len(words))
 
     for i, word := range words {
         fmt.Println("iteration:", i, "word:", word)
