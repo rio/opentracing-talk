@@ -10,7 +10,7 @@
 
 ## cube
 
-![Video](https://player.vimeo.com/87002913)
+![Video](https://player.vimeo.com/video/87002913)
 
 ---
 
