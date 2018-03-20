@@ -17,7 +17,12 @@
 ## OpenTracing
 
 ```go
-func main() {
-    fmt.Println("hello world!")
+func startWork(ctx context.Context, words []string) {
+    span, ctx := opentracing.StartSpanFromContext(ctx, "work")
+    defer span.Finish()
+
+    for i, word := range words {
+        fmt.Println("iteration:", i, "word:", word)
+    }
 }
 ```
