@@ -6,7 +6,7 @@ Note:
 Creative Production Studio
 Mostly works on TV commercials doing everything from music and sound to visual effects and colour
 
----?image=assets/cube_logo.png&size=auto 20%
+---?image=assets/Cube_Logo_flat_white.png&size=auto 20%
 
 Note:
 work on cube
@@ -45,9 +45,9 @@ But unlike those projects it is not a software package, rather it is a specifica
 
 ## What is a trace?
 
-[------------------] |
-  [--------]  [----] |
-     [----]          |
+- [------------------] |
+-   [--------]  [----] |
+-      [----]          |
 
 Note:
 a trace is a collection of spans each representing a unit of work with a name, start- and end-time.
