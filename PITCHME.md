@@ -2,33 +2,41 @@
 
 ---?image=assets/ambassadors.png&size=auto 75%
 
----?image=assets/cube_logo.png&size=auto 20%
-
----
-
-(showreel BG)
+Note:
 Creative Production Studio
 Mostly works on TV commercials doing everything from music and sound to visual effects and colour
 
-work on cube (logo)
+---?image=assets/cube_logo.png&size=auto 20%
+
+Note:
+work on cube
 web platform that stores and processes master quality video for archiving and review purpouses
 with the capability to eventually deliver to broadcasting stations
 
-(cube video BG)
 growth in the last couple of years evolving
 from single threaded to multithreaded to micro and not so micro services.
 One of the main problems is keeping up the levels of observability and visibility
 into the system while it expands across process and network boundaries.
 
+---
+
+Note:
 (logs icon list-ul list-alt list, metrics icon chart-bar chart-area)
 traditionally logging has been part of this domain tracking events as they occur like errors or an audit trail.
 metrics is another one which deals with information that can be aggregated to answer questions like
 what is the number of requests per second that we are handeling, what is the duration of those requests
 and how many of those are considered errors.
 
+---
+
+Note:
 Tracing is about request scoped information. This single request, which systems did it hit? What was the duration of each unit of work that it triggered and what is the relationship between them. This is where the opentracing project comes in.
 
+---
+
 (opentracing logo and name)
+
+Note:
 opentracing is part of the cloud native computing foundation alongside of projects like kubernetes and prometheus. 
 But unlike those projects it is not a software package, rather it is a specification for an api with implementations in a number of different languages.
 
