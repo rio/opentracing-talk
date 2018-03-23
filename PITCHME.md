@@ -1,18 +1,8 @@
+## Rio Kierkels
+
 ---?image=assets/ambassadors.png&size=auto 75%
 
----
-
-# Rio Kierkels
-## Rio Kierkels
-### Rio Kierkels
-
----
-# Rio Kierkels
----
-## Rio Kierkels
----
-### Rio Kierkels
----
+---?image=assets/cube_logo.png
 
 (showreel BG)
 Creative Production Studio
