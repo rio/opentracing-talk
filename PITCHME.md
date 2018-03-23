@@ -20,8 +20,9 @@ into the system while it expands across process and network boundaries.
 
 ---
 
-Note:
 (logs icon list-ul list-alt list, metrics icon chart-bar chart-area)
+
+Note:
 traditionally logging has been part of this domain tracking events as they occur like errors or an audit trail.
 metrics is another one which deals with information that can be aggregated to answer questions like
 what is the number of requests per second that we are handeling, what is the duration of those requests
@@ -40,11 +41,21 @@ Note:
 opentracing is part of the cloud native computing foundation alongside of projects like kubernetes and prometheus. 
 But unlike those projects it is not a software package, rather it is a specification for an api with implementations in a number of different languages.
 
-- What is trace
+---
 
+## What is a trace?
+
+[------------------] |
+  [--------]  [----] |
+     [----]          |
+
+Note:
 a trace is a collection of spans each representing a unit of work with a name, start- and end-time.
 
 together it turns the path of a request through different services from this into this.
+
+---
+
 (show buildup of trace with spans)
 
 (go code example)
