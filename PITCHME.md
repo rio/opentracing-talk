@@ -2,7 +2,7 @@
 
 ---?image=assets/ambassadors.png&size=auto 75%
 
----?image=assets/cube_logo.png&size=auto 40%
+---?image=assets/cube_logo.png&size=auto 20%
 
 ---
 
