@@ -2,7 +2,9 @@
 
 ---?image=assets/ambassadors.png&size=auto 75%
 
----?image=assets/cube_logo.png
+---?image=assets/cube_logo.png&size=auto 40%
+
+---
 
 (showreel BG)
 Creative Production Studio
