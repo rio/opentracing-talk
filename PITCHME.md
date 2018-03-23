@@ -1,4 +1,4 @@
-![video](https://player.vimeo.com/video/87002913?autoplay=1)
+---?image=assets/ambassadors.png&size=auto 90%
 
 
 Rio Kierkels
