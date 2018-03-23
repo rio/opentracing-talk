@@ -1,30 +1,55 @@
-## @fa[terminal]
+---?video=http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4
 
-# Rio Kierkels
-
----
-
-## Ambassadors
+Rio Kierkels
+(logo) Ambassadors
 
 ---
 
-## cube
+(showreel BG)
+Creative Production Studio
+Mostly works on TV commercials doing everything from music and sound to visual effects and colour
 
-![Video](https://player.vimeo.com/video/87002913)
+work on cube (logo)
+web platform that stores and processes master quality video for archiving and review purpouses
+with the capability to eventually deliver to broadcasting stations
 
----
+(cube video BG)
+growth in the last couple of years evolving
+from single threaded to multithreaded to micro and not so micro services.
+One of the main problems is keeping up the levels of observability and visibility
+into the system while it expands across process and network boundaries.
 
-## OpenTracing
+(logs icon list-ul list-alt list, metrics icon chart-bar chart-area)
+traditionally logging has been part of this domain tracking events as they occur like errors or an audit trail.
+metrics is another one which deals with information that can be aggregated to answer questions like
+what is the number of requests per second that we are handeling, what is the duration of those requests
+and how many of those are considered errors.
 
-```go
-func Work(ctx context.Context, words []string) {
-    span, ctx := opentracing.StartSpanFromContext(ctx, "work")
-    defer span.Finish()
+Tracing is about request scoped information. This single request, which systems did it hit? What was the duration of each unit of work that it triggered and what is the relationship between them. This is where the opentracing project comes in.
 
-    span.SetTag("words", len(words))
+(opentracing logo and name)
+opentracing is part of the cloud native computing foundation alongside of projects like kubernetes and prometheus. 
+But unlike those projects it is not a software package, rather it is a specification for an api with implementations in a number of different languages.
 
-    for i, word := range words {
-        fmt.Println("iteration:", i, "word:", word)
-    }
-}
-```
+- What is trace
+
+a trace is a collection of spans each representing a unit of work with a name, start- and end-time.
+
+together it turns the path of a request through different services from this into this.
+(show buildup of trace with spans)
+
+(go code example)
+(python code example)
+
+[tags]
+[logs]
+[bagage]
+
+But all of this instrumentation doesn't actually do anything without a tracer backing it. This is where the vendor agnostic part comes into play.
+The actual work of collecting, storeing and processing those traces is being done by a backend. Which backend doesn't matter as long as that backend implements the opentracing api.
+
+[enumerate tracers]
+
+[demo]
+
+[how to start]

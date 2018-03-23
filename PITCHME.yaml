@@ -1,6 +1,6 @@
 theme: black
 highlight: monokai
-transition: none
+# transition: none
 
 # logo: somwhere/file.png
 # logo-position: bottom-left
