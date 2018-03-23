@@ -1,10 +1,19 @@
 ---?image=assets/ambassadors.png&size=auto 75%
 
+---
 
-Rio Kierkels
-(logo) Ambassadors
+### Rio
 
 ---
+
+### Rio Kierkels
+
+---
+
+## Rio
+---
+
+# Rio
 
 (showreel BG)
 Creative Production Studio
