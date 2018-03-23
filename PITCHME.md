@@ -1,4 +1,4 @@
----?image=assets/ambassadors.png&size=auto 90%
+---?image=assets/ambassadors.png&size=auto 75%
 
 
 Rio Kierkels
