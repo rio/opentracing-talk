@@ -33,13 +33,13 @@ and how many of those are considered errors.
 Note:
 Tracing is about request scoped information. This single request, which systems did it hit? What was the duration of each unit of work that it triggered and what is the relationship between them. This is where the opentracing project comes in.
 
----?image=assets/android-chrome-512x512.png
+---?image=assets/android-chrome-512x512.png?size=auto 75%
 
 Note:
 opentracing is part of the cloud native computing foundation alongside of projects like kubernetes and prometheus. 
 But unlike those projects it is not a software package, rather it is a specification for an api with implementations in a number of different languages.
 
----?image=assets/safari-pinned-tab.png
+---?image=assets/safari-pinned-tab.png?size=auto 75%
 
 Note:
 a trace is a collection of spans each representing a unit of work with a name, start- and end-time.
