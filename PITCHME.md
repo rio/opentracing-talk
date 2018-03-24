@@ -20,6 +20,22 @@ into the system while it expands across process and network boundaries.
 
 ---
 
+@fa[list-ul] @fa[chart-bar]
+
+---
+
+@fa[list-alt] @fa[chart-area]
+
+---
+
+@fa[list-ul] @fa[chart-area]
+
+---
+
+@fa[list-alt] @fa[chart-bar]
+
+---
+
 (logs icon list-ul list-alt list, metrics icon chart-bar chart-area)
 
 Note:
@@ -32,8 +48,6 @@ and how many of those are considered errors.
 
 Note:
 Tracing is about request scoped information. This single request, which systems did it hit? What was the duration of each unit of work that it triggered and what is the relationship between them. This is where the opentracing project comes in.
-
----?image=assets/safari-pinned-tab.png&size=auto 75%
 
 ---?image=assets/opentracing-text-logo.png&size=75% auto
 
