@@ -43,22 +43,14 @@ But unlike those projects it is not a software package, rather it is a specifica
 
 ---
 
-## What is a trace?
+```
+  [---------------------------]  
+    [---------------]  [----]
+       [------] 
 
++----------- time -------------->  
+```
 ---
-
-```
-[-----------------------------------------------------------]
-        [--------------------]  [----]
-           [-----------]
-           [-----------]
-           [-----------]
-           [-----------]
-```
-
-@[1]
-@[2]
-@[3-4]
 
 Note:
 a trace is a collection of spans each representing a unit of work with a name, start- and end-time.
@@ -66,8 +58,6 @@ a trace is a collection of spans each representing a unit of work with a name, s
 together it turns the path of a request through different services from this into this.
 
 ---
-
-(show buildup of trace with spans)
 
 (go code example)
 (python code example)
