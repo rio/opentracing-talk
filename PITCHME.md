@@ -64,6 +64,20 @@ together it turns the path of a request through different services from this int
 
 ---?image=assets/auth-1.png&size=66% auto
 
+---?image=assets/auth-2.png&size=66% auto
+
+---?image=assets/auth-3.png&size=66% auto
+
+---?image=assets/auth-4.png&size=66% auto
+
+---?image=assets/auth-5.png&size=66% auto
+
+---?image=assets/auth-6.png&size=66% auto
+
+---?image=assets/auth-7.png&size=66% auto
+
+---?image=assets/auth-8.png&size=66% auto
+
 ---
 
 (go code example)
