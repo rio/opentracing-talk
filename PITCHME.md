@@ -24,7 +24,7 @@ into the system while it expands across process and network boundaries.
 
 ---?image=assets/jaeger-horizontal-white.svg&size=66% auto
 
----
+---?image=assets/logs.svg&size=90% auto
 
 logging 
 
