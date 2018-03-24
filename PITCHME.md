@@ -18,33 +18,17 @@ from single threaded to multithreaded to micro and not so micro services.
 One of the main problems is keeping up the levels of observability and visibility
 into the system while it expands across process and network boundaries.
 
----
+---?image=assets/grafana.png&size=100% auto
 
-- @fa[list-ul]
+---?image=assets/jaeger-horizontal-white.svg
 
-- @fa[chart-bar]
+---?image=assets/jaeger-horizontal-white.svg&size=70% auto
 
----
+---?image=assets/opentracing-horizontal-white.svg
 
-- @fa[list-alt]
-
-- @fa[chart-area]
+---?image=assets/opentracing-horizontal-white.svg&size=70% auto
 
 ---
-
-- @fa[list-ul]
-
-- @fa[chart-area]
-
----
-
-- @fa[list-alt]
-
-- @fa[chart-bar]
-
----
-
-(logs icon list-ul list-alt list, metrics icon chart-bar chart-area)
 
 Note:
 traditionally logging has been part of this domain tracking events as they occur like errors or an audit trail.
@@ -57,7 +41,9 @@ and how many of those are considered errors.
 Note:
 Tracing is about request scoped information. This single request, which systems did it hit? What was the duration of each unit of work that it triggered and what is the relationship between them. This is where the opentracing project comes in.
 
----?image=assets/opentracing-text-logo.png&size=75% auto
+---
+<!-- .slide: data-background-image="./assets/md/assets/opentracing-text-logo.png" data-background-size="75% auto" data-background-color=" " -->
+
 
 Note:
 opentracing is part of the cloud native computing foundation alongside of projects like kubernetes and prometheus. 
