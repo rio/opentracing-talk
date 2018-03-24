@@ -41,9 +41,7 @@ scope
 Note:
 Tracing is about request scoped information. This single request, which systems did it hit? What was the duration of each unit of work that it triggered and what is the relationship between them. This is where the opentracing project comes in.
 
----
-<!-- .slide: data-background-image="./assets/md/assets/opentracing-text-logo.png" data-background-size="75% auto" data-background-color=" " -->
-
+---?image=assets/opentracing-text-logo.png&size=75% auto
 
 Note:
 opentracing is part of the cloud native computing foundation alongside of projects like kubernetes and prometheus. 
@@ -64,6 +62,111 @@ a trace is a collection of spans each representing a unit of work with a name, s
 
 together it turns the path of a request through different services from this into this.
 
+---
+
+```go
+func Auth(ctx context.Context, userID uuid.UUID) (User, error) {
+
+
+
+
+
+    user := GetUser(ctx, userID)
+    if !user.IsAuthorized {
+
+
+
+
+        return nil, errors.New("unauthorized")
+    }
+
+
+
+    return user, nil
+}
+```
+---
+```go
+func Auth(ctx context.Context, userID uuid.UUID) (User, error) {
+    span, ctx := opentracing.StartSpanFromContext(ctx, "Auth")
+    defer span.Finish()
+
+    span.SetTag("user.id", userID)
+
+    user := GetUser(ctx, userID)
+    if !user.IsAuthorized {
+        span.LogField(
+            log.String("event", "unauthorized"),
+            log.Bool("error", true),
+        )
+        return nil, errors.New("unauthorized")
+    }
+
+    span.LogField(log.String("event", "authorized"))
+
+    return user, nil
+}
+```
+---
+```go
+func Auth(ctx context.Context, userID uuid.UUID) (User, error) {
+
+
+
+    user := GetUser(ctx, userID)
+    if !user.IsAuthorized {
+
+
+
+
+        return nil, errors.New("unauthorized")
+    }
+
+    return user, nil
+}
+```
+---
+```go
+func Auth(ctx context.Context, userID uuid.UUID) (User, error) {
+    span, ctx := opentracing.StartSpanFromContext(ctx, "Auth")
+    defer span.Finish()
+    span.SetTag("user.id", userID)
+    user := GetUser(ctx, userID)
+    if !user.IsAuthorized {
+        span.LogField(
+            log.String("event", "unauthorized"),
+            log.Bool("error", true),
+        )
+        return nil, errors.New("unauthorized")
+    }
+    span.LogField(log.String("event", "authorized"))
+    return user, nil
+}
+```
+---
+```go
+func Auth(ctx context.Context, userID uuid.UUID) (User, error) {
+    span, ctx := opentracing.StartSpanFromContext(ctx, "Auth")
+    defer span.Finish()
+
+    span.SetTag("user.id", userID)
+
+    user := GetUser(ctx, userID)
+    if !user.IsAuthorized {
+        span.LogField(
+            log.String("event", "unauthorized"),
+            log.Bool("error", true),
+        )
+        return nil, errors.New("unauthorized")
+    }
+
+    span.LogField(log.String("event", "authorized"))
+
+    return user, nil
+}
+```
+@[1,19]
+@[7,8,13,14,18]
 ---
 
 (go code example)
