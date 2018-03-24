@@ -41,7 +41,7 @@ scope
 Note:
 Tracing is about request scoped information. This single request, which systems did it hit? What was the duration of each unit of work that it triggered and what is the relationship between them. This is where the opentracing project comes in.
 
----?image=assets/opentracing-text-logo.png&size=75% auto
+--- 
 
 Note:
 opentracing is part of the cloud native computing foundation alongside of projects like kubernetes and prometheus. 
