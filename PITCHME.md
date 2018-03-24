@@ -20,19 +20,27 @@ into the system while it expands across process and network boundaries.
 
 ---
 
-@fa[list-ul] @fa[chart-bar]
+- @fa[list-ul]
+
+- @fa[chart-bar]
 
 ---
 
-@fa[list-alt] @fa[chart-area]
+- @fa[list-alt]
+
+- @fa[chart-area]
 
 ---
 
-@fa[list-ul] @fa[chart-area]
+- @fa[list-ul]
+
+- @fa[chart-area]
 
 ---
 
-@fa[list-alt] @fa[chart-bar]
+- @fa[list-alt]
+
+- @fa[chart-bar]
 
 ---
 
