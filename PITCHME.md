@@ -145,28 +145,15 @@ func Auth(ctx context.Context, userID uuid.UUID) (User, error) {
 ```
 ---
 ```go
-func Auth(ctx context.Context, userID uuid.UUID) (User, error) {
+func Auth(ctx context.Context, userID int) error {
     span, ctx := opentracing.StartSpanFromContext(ctx, "Auth")
     defer span.Finish()
 
-    span.SetTag("user.id", userID)
-
-    user := GetUser(ctx, userID)
-    if !user.IsAuthorized {
-        span.LogField(
-            log.String("event", "unauthorized"),
-            log.Bool("error", true),
-        )
-        return nil, errors.New("unauthorized")
-    }
-
-    span.LogField(log.String("event", "authorized"))
-
-    return user, nil
+    // business logic
 }
 ```
-@[1,19]
-@[7,8,13,14,18]
+@[2]
+@[3]
 ---
 
 (go code example)
