@@ -35,7 +35,7 @@ Tracing is about request scoped information. This single request, which systems 
 
 ---?image=assets/safari-pinned-tab.png&size=auto 75%
 
----?image=assets/opentracing-text-logo.png&size=auto 60%
+---?image=assets/opentracing-text-logo.png&size=75% auto
 
 Note:
 opentracing is part of the cloud native computing foundation alongside of projects like kubernetes and prometheus. 
