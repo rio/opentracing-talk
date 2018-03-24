@@ -20,13 +20,9 @@ into the system while it expands across process and network boundaries.
 
 ---?image=assets/grafana.png&size=100% auto
 
----?image=assets/jaeger-horizontal-white.svg
+---?image=assets/opentracing-horizontal-white.svg&size=66% auto
 
----?image=assets/jaeger-horizontal-white.svg&size=70% auto
-
----?image=assets/opentracing-horizontal-white.svg
-
----?image=assets/opentracing-horizontal-white.svg&size=70% auto
+---?image=assets/jaeger-horizontal-white.svg&size=66% auto
 
 ---
 
@@ -48,6 +44,22 @@ Tracing is about request scoped information. This single request, which systems 
 Note:
 opentracing is part of the cloud native computing foundation alongside of projects like kubernetes and prometheus. 
 But unlike those projects it is not a software package, rather it is a specification for an api with implementations in a number of different languages.
+
+---
+
+![trace1](assets/trace_row1.png)
+
+---
+
+![trace2](assets/trace_row2.0.png)
+
+---
+
+![trace3](assets/trace_row2.1.png)
+
+---
+
+![trace4](assets/trace.png)
 
 ---
 
