@@ -26,6 +26,8 @@ into the system while it expands across process and network boundaries.
 
 ---
 
+logging 
+
 Note:
 traditionally logging has been part of this domain tracking events as they occur like errors or an audit trail.
 metrics is another one which deals with information that can be aggregated to answer questions like
@@ -33,6 +35,8 @@ what is the number of requests per second that we are handeling, what is the dur
 and how many of those are considered errors.
 
 ---
+
+scope
 
 Note:
 Tracing is about request scoped information. This single request, which systems did it hit? What was the duration of each unit of work that it triggered and what is the relationship between them. This is where the opentracing project comes in.
@@ -45,21 +49,13 @@ Note:
 opentracing is part of the cloud native computing foundation alongside of projects like kubernetes and prometheus. 
 But unlike those projects it is not a software package, rather it is a specification for an api with implementations in a number of different languages.
 
----
+---?image=assets/trace_row1.png&size=60% auto
 
-![trace1](assets/trace_row1.png)
+---?image=assets/trace_row2.0.png&size=60% auto
 
----
+---?image=assets/trace_row2.1.png&size=60% auto
 
-![trace2](assets/trace_row2.0.png)
-
----
-
-![trace3](assets/trace_row2.1.png)
-
----
-
-![trace4](assets/trace.png)
+---?image=assets/trace.png&size=60% auto
 
 ---
 
