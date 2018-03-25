@@ -1,13 +1,3 @@
-## Rio Kierkels
-
----?image=assets/ambassadors.png&size=auto 75%
-
-@title[Ambassadors]
-
-Note:
-Creative Production Studio
-Mostly works on TV commercials doing everything from music and sound to visual effects and colour
-
 ---?image=assets/Cube_Logo_flat_white.png&size=auto 20%
 
 @title[cube]
@@ -21,6 +11,16 @@ growth in the last couple of years evolving
 from single threaded to multithreaded to micro and not so micro services.
 One of the main problems is keeping up the levels of observability and visibility
 into the system while it expands across process and network boundaries.
+
+## Rio Kierkels
+
+---?image=assets/ambassadors.png&size=auto 75%
+
+@title[Ambassadors]
+
+Note:
+Creative Production Studio
+Mostly works on TV commercials doing everything from music and sound to visual effects and colour
 
 ---?image=assets/logs.png&size=90% auto
 
@@ -101,8 +101,14 @@ Note:
 But all of this instrumentation doesn't actually do anything without a tracer backing it. This is where the vendor agnostic part comes into play.
 The actual work of collecting, storeing and processing those traces is being done by a backend. Which backend doesn't matter as long as that backend implements the opentracing api.
 
-[enumerate tracers]
+---
 
-[demo]
+# [demo]
 
-[how to start]
+---
+
+# [enumerate tracers]
+
+---
+
+# [how to start]
