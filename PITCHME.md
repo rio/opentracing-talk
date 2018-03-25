@@ -1,5 +1,16 @@
----?image=assets/Cube_Logo_flat_white.png&size=auto 20%
+## Rio Kierkels
 
+---?image=assets/ambassadors.png&size=auto 75%
+
+@title[Ambassadors]
+
+Note:
+Creative Production Studio
+Mostly works on TV commercials doing everything from music and sound to visual effects and colour
+
+---?video=http://localhost:8000/CUBE_2014.mp4
+
+---?image=assets/Cube_Logo_flat_white.png&size=auto 20%
 @title[cube]
 
 Note:
@@ -11,16 +22,6 @@ growth in the last couple of years evolving
 from single threaded to multithreaded to micro and not so micro services.
 One of the main problems is keeping up the levels of observability and visibility
 into the system while it expands across process and network boundaries.
-
-## Rio Kierkels
-
----?image=assets/ambassadors.png&size=auto 75%
-
-@title[Ambassadors]
-
-Note:
-Creative Production Studio
-Mostly works on TV commercials doing everything from music and sound to visual effects and colour
 
 ---?image=assets/logs.png&size=90% auto
 
