@@ -43,9 +43,9 @@ and how many of those are considered errors.
 
 ---
 
-@title[Tracing]
+@title[Request Scoped]
 
-## Tracing
+## Request Scoped
 
 Note:
 Tracing is about request scoped information. This single request, which systems did it hit? What was the duration of each unit of work that it triggered and what is the relationship between them. This is where the opentracing project comes in.

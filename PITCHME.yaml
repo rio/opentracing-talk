@@ -2,6 +2,7 @@ theme: black
 highlight: monokai
 transition: none
 theme-override: assets/css/PITCHME.css
+published: true
 
 # logo: somwhere/file.png
 # logo-position: bottom-left
