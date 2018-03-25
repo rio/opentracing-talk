@@ -58,6 +58,12 @@ Note:
 opentracing is part of the cloud native computing foundation alongside of projects like kubernetes and prometheus. 
 But unlike those projects it is not a software package, rather it is a specification for an api with implementations in a number of different languages.
 
+---
+
+@title[What is a Trace?]
+
+## What is a Trace?
+
 ---?image=assets/trace_row1.png&size=60% auto
 
 Note:
@@ -100,14 +106,17 @@ logs
 
 ---
 
-- RPC Layer
+## Where do I begin?
+
+- RPC Layer / Mesh Network
 - Web Framework                 |
 - Reverse Proxy                 |
 - Queues / In Memory Datastores |
-- Database ORM/Driver           |
+- Database ORM / Driver         |
+- Logger                        |
 
 Note:
-- rpc: GRPC, thrift, akka
+- rpc: GRPC, thrift, akka, envoy
 - web: Django, Spring Cloud
 - reverse proxy: Nginx
 - queues/in memory datastores: redis, rabbitqp
