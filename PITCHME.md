@@ -100,7 +100,18 @@ logs
 
 ---
 
-## [enumerate tracers]
+- RPC Layer
+- Web Framework                 |
+- Reverse Proxy                 |
+- Queues / In Memory Datastore  |
+- Database ORM/Driver           |
+
+Note:
+- rpc: GRPC, thrift, akka
+- web: Django, Spring Cloud
+- reverse proxy: Nginx
+- queues/in memory datastores: redis, rabbitqp
+- ORM: SQLAlchemy
 
 ---?image=assets/jaeger-horizontal-white.svg&size=66% auto
 
@@ -109,10 +120,6 @@ logs
 Note:
 But all of this instrumentation doesn't actually do anything without a tracer backing it. This is where the vendor agnostic part comes into play.
 The actual work of collecting, storeing and processing those traces is being done by a backend. Which backend doesn't matter as long as that backend implements the opentracing api.
-
----
-
-# [how to start]
 
 ---
 
