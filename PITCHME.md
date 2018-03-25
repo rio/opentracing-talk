@@ -103,7 +103,7 @@ logs
 - RPC Layer
 - Web Framework                 |
 - Reverse Proxy                 |
-- Queues / In Memory Datastore  |
+- Queues / In Memory Datastores |
 - Database ORM/Driver           |
 
 Note:
