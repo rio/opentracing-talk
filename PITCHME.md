@@ -147,4 +147,7 @@ The actual work of collecting, storeing and processing those traces is being don
 
 ---
 
-# [demo]
+# Thank you
+
+**ambassadors.studio**/careers
+
