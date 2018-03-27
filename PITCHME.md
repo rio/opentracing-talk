@@ -1,3 +1,10 @@
+## Intro to OpenTracing
+
+Note:
+problem space
+
+---
+
 ## Rio Kierkels
 
 ---?image=assets/ambassadors.png&size=auto 75%
@@ -63,6 +70,12 @@ But unlike those projects it is not a software package, rather it is a specifica
 @title[What is a Trace?]
 
 ## What is a Trace?
+
+- Spans
+- Operation Name |
+- Start Time     |
+- Finish Time    |
+- Relationship   |
 
 ---?image=assets/trace_row1.png&size=60% auto
 
