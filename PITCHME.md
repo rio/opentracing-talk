@@ -83,11 +83,15 @@ Note:
 a trace is a collection of spans each representing a unit of work with a name, start- and end-time.
 together it turns the path of a request through different services from this into this.
 
----?image=assets/trace_row2.0.png&size=60% auto
+---?image=assets/traces/trace-1.png&size=90% auto
 
----?image=assets/trace_row2.1.png&size=60% auto
+---?image=assets/traces/trace-2.png&size=90% auto
 
----?image=assets/trace.png&size=60% auto
+---?image=assets/traces/trace-3.png&size=90% auto
+
+---?image=assets/traces/trace-4.png&size=90% auto
+
+---?image=assets/traces/trace-5.png&size=90% auto
 
 ---?image=assets/auth-1.png&size=66% auto
 
