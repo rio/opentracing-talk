@@ -77,8 +77,6 @@ But unlike those projects it is not a software package, rather it is a specifica
 - Finish Time    |
 - Relationship   |
 
----?image=assets/trace_row1.png&size=60% auto
-
 Note:
 a trace is a collection of spans each representing a unit of work with a name, start- and end-time.
 together it turns the path of a request through different services from this into this.
