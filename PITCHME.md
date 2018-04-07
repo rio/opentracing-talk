@@ -166,7 +166,7 @@ show init
 
 ## Where do I begin?
 
-- RPC Layer / Mesh Network
+- RPC Layer / Mesh Network      |
 - Web Framework                 |
 - Reverse Proxy                 |
 - Queues / In Memory Datastores |
