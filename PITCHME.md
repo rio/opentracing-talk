@@ -139,6 +139,11 @@ logs
 
 @title[Baggage]
 
+## Baggage
+
+- Just like tags
+- Travel with the span context
+
 Note:
 baggage
 
