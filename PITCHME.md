@@ -91,6 +91,32 @@ together it turns the path of a request through different services from this int
 
 ---?image=assets/traces/trace-5.png&size=90% auto
 
+---
+
+@title[Span Tags]
+
+## Tags
+
+- Describe properties of the current span
+- Simple key-value pairs
+- Typed
+
+
+Note:
+tags
+
+---
+
+@title[Span Logs]
+
+## Logs
+
+- Just like tags
+- Have a timestamp attached
+
+Note:
+logs
+
 ---?image=assets/auth-1.png&size=66% auto
 
 @title[Code Example]
@@ -107,17 +133,29 @@ together it turns the path of a request through different services from this int
 
 ---?image=assets/auth-7.png&size=66% auto
 
-@title[Span Tags]
-
-Note:
-tags
-
 ---?image=assets/auth-8.png&size=66% auto
 
-@title[Span Logs]
+---
+
+@title[Baggage]
 
 Note:
-logs
+baggage
+
+---?image=assets/jaeger-horizontal-white.svg&size=66% auto
+
+@title[Jaeger]
+
+Note:
+But all of this instrumentation doesn't actually do anything without a tracer backing it. This is where the vendor agnostic part comes into play.
+The actual work of collecting, storeing and processing those traces is being done by a backend. Which backend doesn't matter as long as that backend implements the opentracing api.
+
+---?image=assets/jaeger-init.png&size=66% auto
+
+@title[Jaeger Init]
+
+Note:
+show init
 
 ---
 
@@ -137,17 +175,12 @@ Note:
 - queues/in memory datastores: redis, rabbitqp
 - ORM: SQLAlchemy
 
----?image=assets/jaeger-horizontal-white.svg&size=66% auto
+---
 
-@title[Jaeger]
-
-Note:
-But all of this instrumentation doesn't actually do anything without a tracer backing it. This is where the vendor agnostic part comes into play.
-The actual work of collecting, storeing and processing those traces is being done by a backend. Which backend doesn't matter as long as that backend implements the opentracing api.
+# [Demo Time]
 
 ---
 
-# Thank you
+# Thank You
 
 **ambassadors.studio**/*careers*
-
