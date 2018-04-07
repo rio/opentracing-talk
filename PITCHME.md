@@ -98,8 +98,8 @@ together it turns the path of a request through different services from this int
 ## Tags
 
 - Describe properties of the current span
-- Simple key-value pairs
-- Typed
+- Simple key-value pairs                    |
+- Typed                                     |
 
 
 Note:
@@ -112,7 +112,7 @@ tags
 ## Logs
 
 - Just like tags
-- Have a timestamp attached
+- Have a timestamp attached |
 
 Note:
 logs
