@@ -142,7 +142,7 @@ logs
 ## Baggage
 
 - Just like tags
-- Travel with the span context
+- Travel with the span context |
 
 Note:
 baggage
