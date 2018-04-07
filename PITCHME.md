@@ -71,7 +71,7 @@ But unlike those projects it is not a software package, rather it is a specifica
 
 ## What is a Trace?
 
-- Spans
+- Spans          |
 - Operation Name |
 - Start Time     |
 - Finish Time    |
@@ -97,9 +97,9 @@ together it turns the path of a request through different services from this int
 
 ## Tags
 
-- Describe properties of the current span
-- Simple key-value pairs                    |
-- Typed                                     |
+- Describe properties of the current span |
+- Simple key-value pairs                  |
+- Typed                                   |
 
 
 Note:
@@ -111,7 +111,7 @@ tags
 
 ## Logs
 
-- Just like tags
+- Just like tags            |
 - Have a timestamp attached |
 
 Note:
@@ -141,7 +141,7 @@ logs
 
 ## Baggage
 
-- Just like tags
+- Just like tags               |
 - Travel with the span context |
 
 Note:
