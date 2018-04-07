@@ -57,7 +57,7 @@ and how many of those are considered errors.
 Note:
 Tracing is about request scoped information. This single request, which systems did it hit? What was the duration of each unit of work that it triggered and what is the relationship between them. This is where the opentracing project comes in.
 
----?image=assets/opentracing-horizontal-white.svg&size=66% auto
+---?image=assets/opentracing-horizontal-white.png&size=66% auto
 
 @title[OpenTracing API]
 
@@ -147,7 +147,7 @@ logs
 Note:
 baggage
 
----?image=assets/jaeger-horizontal-white.svg&size=66% auto
+---?image=assets/jaeger-horizontal-white.png&size=66% auto
 
 @title[Jaeger]
 
