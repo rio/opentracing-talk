@@ -1,0 +1,47 @@
+version: "3.1"
+
+services:
+  jaeger:
+    image: jaegertracing/all-in-one
+    environment:
+      COLLECTOR_ZIPKIN_HTTP_PORT: "9411"
+    ports:
+      - "6831:6831/udp"
+      - "16686:16686"
+
+  cockroach:
+    image: cockroachdb/cockroach:v2.0.0
+    command: start --insecure
+    depends_on:
+      - jaeger
+    ports:
+      - "8080:8080"
+
+  cockroach-node:
+    image: cockroachdb/cockroach:v2.0.0
+    command: start --join=cockroach:26257 --insecure
+    depends_on:
+      - cockroach
+  
+  cockroach-init:
+    image: cockroachdb/cockroach:v2.0.0
+    depends_on:
+      - cockroach
+    environment:
+      COCKROACH_HOST: cockroach
+      COCKROACH_INSECURE: "true"
+    command: shell ./scripts/cockroach-init.sh
+    volumes:
+      - "./scripts:/cockroach/scripts:z"
+
+  sql:
+    image: cockroachdb/cockroach:v2.0.0
+    entrypoint: /bin/bash
+    depends_on:
+      - cockroach
+    environment:
+      COCKROACH_HOST: cockroach
+      COCKROACH_INSECURE: "true"
+      COCKROACH_DATABASE: "startrek"
+    volumes:
+      - "./scripts:/cockroach/scripts:z"

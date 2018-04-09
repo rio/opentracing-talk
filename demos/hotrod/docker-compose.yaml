@@ -1,0 +1,18 @@
+version: "3.1"
+
+services:
+  jaeger:
+    image: jaegertracing/all-in-one
+    environment:
+      COLLECTOR_ZIPKIN_HTTP_PORT: "9411"
+    ports:
+      - "16686:16686"
+
+  hotrod:
+    image: jaegertracing/example-hotrod
+    command: --jaeger-agent.host-port=jaeger:6831
+    depends_on:
+      - jaeger
+    ports:
+      - 8080:8080
+  
