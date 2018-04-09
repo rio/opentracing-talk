@@ -15,6 +15,10 @@ Note:
 Creative Production Studio
 Mostly works on TV commercials doing everything from music and sound to visual effects and colour
 
+---?video=http://localhost:8000/DesignAnimationDirection_Reel2018.mp4
+
+@title[Showreel]
+
 ---?image=assets/Cube_Logo_flat_white.png&size=auto 20%
 
 @title[cube]
@@ -23,6 +27,14 @@ Note:
 work on cube
 web platform that stores and processes master quality video for archiving and review purpouses
 with the capability to eventually deliver to broadcasting stations
+
+---?video=http://localhost:8000/CUBE_2014.mp4
+
+Note:
+growth in the last couple of years evolving
+from single threaded to multithreaded to micro and not so micro services.
+One of the main problems is keeping up the levels of observability and visibility
+into the system while it expands across process and network boundaries.
 
 ---?image=assets/logs.png&size=90% auto
 
@@ -182,8 +194,4 @@ Note:
 
 **ambassadors.studio**/*careers*
 
-<<<<<<< HEAD
 **github.com/Rio**/*opentracing-talk*
-=======
-github.com/*Rio*/*opentracing-talk*
->>>>>>> add opentracing-talk
