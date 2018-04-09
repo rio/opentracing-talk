@@ -182,4 +182,8 @@ Note:
 
 **ambassadors.studio**/*careers*
 
+<<<<<<< HEAD
 **github.com/Rio**/*opentracing-talk*
+=======
+github.com/*Rio*/*opentracing-talk*
+>>>>>>> add opentracing-talk
