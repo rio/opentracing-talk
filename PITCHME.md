@@ -182,4 +182,4 @@ Note:
 
 **ambassadors.studio**/*careers*
 
-github.com/*Rio*/*opentracing-talk*
+github.com/**Rio/opentracing-talk**
