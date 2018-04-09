@@ -181,3 +181,5 @@ Note:
 # Thank You
 
 **ambassadors.studio**/*careers*
+
+github.com/*Rio*/*opentracing-talk*
