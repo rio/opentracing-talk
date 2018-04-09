@@ -115,8 +115,8 @@ tags
 
 ## Logs
 
-- Just like tags            |
-- Have a timestamp attached |
+- Just like tags  |
+- But timestamped |
 
 Note:
 logs
@@ -145,8 +145,8 @@ logs
 
 ## Baggage
 
-- Just like tags               |
-- Travel with the span context |
+- Again, just like tags         |
+- Travels with the span context |
 
 Note:
 baggage
