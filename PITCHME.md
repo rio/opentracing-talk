@@ -89,9 +89,8 @@ together it turns the path of a request through different services from this int
 
 ## Tags
 
-- Describe properties of the current span |
-- Simple key-value pairs                  |
-- Typed                                   |
+- Simple key-value pairs    |
+- Describe the current span |
 
 
 Note:
