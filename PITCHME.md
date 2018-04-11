@@ -1,11 +1,9 @@
 ## Intro to OpenTracing
 
+#### Rio Kierkels
+
 Note:
 problem space
-
----
-
-## Rio Kierkels
 
 ---?image=assets/ambassadors.png&size=auto 75%
 
@@ -85,16 +83,6 @@ Note:
 a trace is a collection of spans each representing a unit of work with a name, start- and end-time.
 together it turns the path of a request through different services from this into this.
 
----?image=assets/traces/trace-1.png&size=90% auto
-
----?image=assets/traces/trace-2.png&size=90% auto
-
----?image=assets/traces/trace-3.png&size=90% auto
-
----?image=assets/traces/trace-4.png&size=90% auto
-
----?image=assets/traces/trace-5.png&size=90% auto
-
 ---
 
 @title[Span Tags]
@@ -121,6 +109,25 @@ tags
 Note:
 logs
 
+---
+
+@title[Baggage]
+
+## Baggage
+
+- Again, just like tags  |
+- Travels with the trace |
+
+---?image=assets/traces/trace-1.png&size=90% auto
+
+---?image=assets/traces/trace-2.png&size=90% auto
+
+---?image=assets/traces/trace-3.png&size=90% auto
+
+---?image=assets/traces/trace-4.png&size=90% auto
+
+---?image=assets/traces/trace-5.png&size=90% auto
+
 ---?image=assets/auth-1.png&size=66% auto
 
 @title[Code Example]
@@ -141,15 +148,7 @@ logs
 
 ---
 
-@title[Baggage]
-
-## Baggage
-
-- Again, just like tags         |
-- Travels with the span context |
-
-Note:
-baggage
+## Tracers
 
 ---?image=assets/jaeger-horizontal-white.png&size=66% auto
 
@@ -175,7 +174,6 @@ show init
 - Reverse Proxy                 |
 - Queues / In Memory Datastores |
 - Database ORM / Driver         |
-- Logger                        |
 
 Note:
 - rpc: GRPC, thrift, akka, envoy
