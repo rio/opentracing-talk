@@ -147,25 +147,6 @@ logs
 
 ---
 
-## Tracers
-
----?image=assets/jaeger-horizontal-white.png&size=66% auto
-
-@title[Jaeger]
-
-Note:
-But all of this instrumentation doesn't actually do anything without a tracer backing it. This is where the vendor agnostic part comes into play.
-The actual work of collecting, storeing and processing those traces is being done by a backend. Which backend doesn't matter as long as that backend implements the opentracing api.
-
----?image=assets/jaeger-init.png&size=66% auto
-
-@title[Jaeger Init]
-
-Note:
-show init
-
----
-
 ## Where do I begin?
 
 - RPC Layer / Mesh Network      |
@@ -180,6 +161,18 @@ Note:
 - reverse proxy: Nginx
 - queues/in memory datastores: redis, rabbitqp
 - ORM: SQLAlchemy
+
+---
+
+## Tracers
+
+---?image=assets/jaeger-horizontal-white.png&size=66% auto
+
+@title[Jaeger]
+
+Note:
+But all of this instrumentation doesn't actually do anything without a tracer backing it. This is where the vendor agnostic part comes into play.
+The actual work of collecting, storeing and processing those traces is being done by a backend. Which backend doesn't matter as long as that backend implements the opentracing api.
 
 ---
 
