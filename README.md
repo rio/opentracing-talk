@@ -56,6 +56,6 @@ WHERE
 Finally we're going to run the above query against these tables joining them together and returning all the quotes that involve Spock and the title of the episode the quote came from.
 Running `docker-compose run --rm cockroach-select` should return 55 rows that consists of 3 columns named `title`, `character` and `quote`.
 
-When looking in Jaeger on `localhost:16686` you should filter on the `sql txn` operation. The trace you're looking for will probably have at least 20 spans but they will vary depending on the distribution of the data between the nodes. While reading the [Cockroach's Architecture article](https://www.cockroachlabs.com/docs/stable/architecture/overview.html) you should try and look at the spans if you can recognize any of the operation described there.
+When looking in Jaeger on `localhost:16686` you should filter on the `sql txn` operation. The trace you're looking for will probably have at least 20 spans but they will vary depending on the distribution of the data between the nodes. While reading [Cockroach's Architecture article](https://www.cockroachlabs.com/docs/stable/architecture/overview.html) you should try and look at the spans if you can recognize any of the operation described there.
 
 To tear everything down again simply run `docker-compose down`.
