@@ -1,11 +1,9 @@
 ## Intro to OpenTracing
 
+#### Rio Kierkels
+
 Note:
 problem space
-
----
-
-## Rio Kierkels
 
 ---?image=assets/ambassadors.png&size=auto 75%
 
@@ -73,25 +71,14 @@ Note:
 a trace is a collection of spans each representing a unit of work with a name, start- and end-time.
 together it turns the path of a request through different services from this into this.
 
----?image=assets/traces/trace-1.png&size=90% auto
-
----?image=assets/traces/trace-2.png&size=90% auto
-
----?image=assets/traces/trace-3.png&size=90% auto
-
----?image=assets/traces/trace-4.png&size=90% auto
-
----?image=assets/traces/trace-5.png&size=90% auto
-
 ---
 
 @title[Span Tags]
 
 ## Tags
 
-- Describe properties of the current span |
-- Simple key-value pairs                  |
-- Typed                                   |
+- Simple key-value pairs    |
+- Describe the current span |
 
 
 Note:
@@ -108,6 +95,25 @@ tags
 
 Note:
 logs
+
+---
+
+@title[Baggage]
+
+## Baggage
+
+- Again, just like tags  |
+- Travels with the trace |
+
+---?image=assets/traces/trace-1.png&size=90% auto
+
+---?image=assets/traces/trace-2.png&size=90% auto
+
+---?image=assets/traces/trace-3.png&size=90% auto
+
+---?image=assets/traces/trace-4.png&size=90% auto
+
+---?image=assets/traces/trace-5.png&size=90% auto
 
 ---?image=assets/auth-1.png&size=66% auto
 
@@ -129,15 +135,24 @@ logs
 
 ---
 
-@title[Baggage]
+## Where do I begin?
 
-## Baggage
-
-- Again, just like tags         |
-- Travels with the span context |
+- RPC Layer / Mesh Network      |
+- Web Framework                 |
+- Reverse Proxy                 |
+- Queues / In Memory Datastores |
+- Database ORM / Driver         |
 
 Note:
-baggage
+- rpc: GRPC, thrift, akka, envoy
+- web: Django, Spring Cloud
+- reverse proxy: Nginx
+- queues/in memory datastores: redis, rabbitqp
+- ORM: SQLAlchemy
+
+---
+
+## Tracers
 
 ---?image=assets/jaeger-horizontal-white.png&size=66% auto
 
@@ -146,31 +161,6 @@ baggage
 Note:
 But all of this instrumentation doesn't actually do anything without a tracer backing it. This is where the vendor agnostic part comes into play.
 The actual work of collecting, storeing and processing those traces is being done by a backend. Which backend doesn't matter as long as that backend implements the opentracing api.
-
----?image=assets/jaeger-init.png&size=66% auto
-
-@title[Jaeger Init]
-
-Note:
-show init
-
----
-
-## Where do I begin?
-
-- RPC Layer / Mesh Network      |
-- Web Framework                 |
-- Reverse Proxy                 |
-- Queues / In Memory Datastores |
-- Database ORM / Driver         |
-- Logger                        |
-
-Note:
-- rpc: GRPC, thrift, akka, envoy
-- web: Django, Spring Cloud
-- reverse proxy: Nginx
-- queues/in memory datastores: redis, rabbitqp
-- ORM: SQLAlchemy
 
 ---
 
