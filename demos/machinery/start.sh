@@ -1,2 +1,2 @@
-docker-compose up -d --scale machinery=3
+docker-compose up -d
 docker-compose ps

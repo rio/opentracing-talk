@@ -22,7 +22,27 @@ services:
     command: start --join=cockroach:26257 --insecure
     depends_on:
       - cockroach
-  
+
+  cockroach-enable-tracing:
+    image: cockroachdb/cockroach:v2.0.0
+    depends_on:
+      - cockroach
+    environment:
+      COCKROACH_HOST: cockroach
+      COCKROACH_INSECURE: "true"
+    command: sql -e "SET TRACING = cluster; SET CLUSTER SETTING trace.zipkin.collector='jaeger:9411'"
+
+  cockroach-select:
+    image: cockroachdb/cockroach:v2.0.0
+    depends_on:
+      - cockroach
+      - cockroach-enable-tracing
+    environment:
+      COCKROACH_HOST: cockroach
+      COCKROACH_INSECURE: "true"
+      COCKROACH_DATABASE: "startrek"
+    command: sql -e "SELECT episodes.title, quotes.characters, quotes.quote FROM quotes JOIN episodes ON episodes.id = quotes.episode WHERE quotes.characters LIKE '%Spock%'"
+
   cockroach-init:
     image: cockroachdb/cockroach:v2.0.0
     depends_on:
@@ -30,18 +50,14 @@ services:
     environment:
       COCKROACH_HOST: cockroach
       COCKROACH_INSECURE: "true"
-    command: shell ./scripts/cockroach-init.sh
-    volumes:
-      - "./scripts:/cockroach/scripts:z"
+    entrypoint: ["/bin/bash", "-c"]
+    command: |
+      '
+        ./cockroach gen example-data startrek | ./cockroach sql --insecure
 
-  sql:
-    image: cockroachdb/cockroach:v2.0.0
-    entrypoint: /bin/bash
-    depends_on:
-      - cockroach
-    environment:
-      COCKROACH_HOST: cockroach
-      COCKROACH_INSECURE: "true"
-      COCKROACH_DATABASE: "startrek"
-    volumes:
-      - "./scripts:/cockroach/scripts:z"
+        ./cockroach sql -e "ALTER TABLE startrek.episodes SPLIT AT VALUES (40), (80), (120), (160)"
+        ./cockroach sql -e "ALTER TABLE startrek.quotes   SPLIT AT VALUES (40), (80), (120), (160)"
+
+        ./cockroach sql -e "SHOW TESTING_RANGES FROM TABLE startrek.quotes"
+        ./cockroach sql -e "SHOW TESTING_RANGES FROM TABLE startrek.episodes"
+      '
